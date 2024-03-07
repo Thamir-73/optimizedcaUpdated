@@ -1,0 +1,63 @@
+- id: "add_to_cart"
+  translation: "اضف للعربة"
+  
+- id: "send"
+  translation: "ارسل الآن"
+  
+- id: "subscribe"
+  translation: "اشترك"
+  
+- id: "read_more"
+  translation: "اقرأ اكثر"
+
+- id: "navbar_button_Home"
+  translation: "الرئيسية"
+
+- id: "navbar_button_Products"
+  translation: "المنتجات"
+
+- id: "navbar_button_surgical"
+  translation: "رعاية مابعد الجراحة"
+
+- id: "navbar_button_mother"
+  translation: "رعاية الام والطفل "
+
+- id: "navbar_button_homecare"
+  translation: "الرعاية الصحية المنزلية"
+
+- id: "navbar_button_About"
+  translation: "عنّا"
+
+- id: "navbar_button_Blog"
+  translation: "المدونة"
+
+- id: "navbar_button_Contact"
+  translation: "تواصل معنا"
+
+- id: "navbar_button_allproducts"
+  translation: "جميع المنتجات"
+
+
+- id: "footer_button_Blog"
+  translation: "المدونة"
+
+- id: "footer_button_Delivery"
+  translation: "التوصيل"
+
+- id: "footer_button_refund"
+  translation: "الاسترجاع"
+
+- id: "footer_button_Terms & Conditions"
+  translation: "الاحكام والشروط"
+
+- id: "footer_button_Privacy Policy"
+  translation: "الخصوصية"
+
+- id: "Your Email"
+  translation: "ايميلك"
+
+- id: "Your Message"
+  translation: "رسالتك"
+
+- id: "Your Name"
+  translation: "اسمك"

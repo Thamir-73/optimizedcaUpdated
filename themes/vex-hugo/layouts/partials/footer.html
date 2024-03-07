@@ -1,0 +1,83 @@
+<footer class="footer-section">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <a href="{{ site.BaseURL | relLangURL }}" class="mb-4 d-inline-block">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" {{with site.Params.logo_width}}width="{{.}}"{{end}}> {{ else }} {{ .Title }} {{ end }}</a>
+          <ul class="list-inline footer-menu">
+            {{ range site.Menus.footer }}
+              {{ if .HasChildren }}
+                <li class="list-inline-item dropdown">
+                  <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ i18n (print "footer_button_" .Name) }}
+                  </a>
+                  <div class="dropdown-menu">
+                    {{ range .Children }}
+                      <a class="dropdown-item" href="{{ .URL | absLangURL }}">
+                        {{ i18n (print "footer_button_" .Name) }}
+                      </a>
+                    {{ end }}
+                  </div>
+                </li>
+              {{ else }}
+                <li class="list-inline-item">
+                  <a href="{{ .URL | absLangURL }}">{{ i18n (print "footer_button_" .Name) }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- Add the following JavaScript code at the end of your HTML file -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownToggleElements = document.querySelectorAll(".dropdown-toggle");
+
+    dropdownToggleElements.forEach(function (toggleElement) {
+      toggleElement.addEventListener("click", function (event) {
+        event.preventDefault();
+        const dropdownMenu = toggleElement.nextElementSibling;
+
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .footer-section .dropdown-menu {
+  bottom: 100%;
+  top: auto;
+  font-size: 14px;
+}
+
+
+</style>
+
+<!-- Snipcart public key -->
+{{ with site.Params.snipcart }}
+{{ if .enable }}
+{{ with .snipcart_api }}
+<div hidden id="snipcart" data-api-key="{{.}}"></div>
+{{ end }}
+{{ end }}
+{{ end }}
+
+<!-- JS Plugins -->
+{{ range site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $script := resources.Get "js/script.js" }}
+<script src="{{ $script.Permalink }}"></script>

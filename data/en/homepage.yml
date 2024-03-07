@@ -1,0 +1,122 @@
+############################# banner ############################
+banner:
+  enable: true
+  title: "Managing Your Injuries, With All Your Needed Equipment, To Your Doorstep"
+  content: "Did you or a loved one get injured recently? 
+  Don't worry!"
+  image: "images/legs22.png"
+  button:
+    enable: true
+    label: "Browse Our Products"
+    link: "products/"
+############################# Feature ############################
+features:
+  enable: true
+  title: "Why Us?"
+  image: "images/shhip88.webp"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+    - title: "Quality"
+      icon: "tf-ion-ios-medkit-outline"
+      content: "Carefully Chosen quality products by Medical field practitioners"
+
+
+      # feature item loop
+    - title: "Offers & Discounts"
+      icon: "tf-ion-ios-cart-outline"
+      content: "Offers & Sales for Clients interested in several of our products"
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+    - title: "Quick Delivery"
+      icon: "tf-ion-ios-alarm-outline"
+      content: "Within 24 hours quick delivery to your doorstep"
+
+      # feature item loop
+    - title: "Smooth experience"
+      icon: "tf-ion-ios-bell-outline"
+      content: "Clients can get back to us anytime for a refund."
+
+     
+
+############################# promo ############################
+promo:
+  enable: true
+  image: "images/eetr2.png"
+  title: "A team of Professionals, picking the needed equipment for managing your injuries"
+  content:
+    "We focus on providing equipment for mechanical injuries, whether related to sports or other accidents. Our team works on the field, and understands all necessary equipment for managing injuries."
+
+############################# About Product #######################
+about_product:
+  enable: true
+  title: "Our Categories"
+  items:
+    # about product item loop
+    - image: "images/sportds.webp"
+      title: "Sports Injury Equipment"
+      content:
+        "All Post-surgical Patients' equipment and necessities facilitated for at your doorsteps."
+      button:
+        enable: true
+        label: "Explore Category"
+        link: "products2/"
+
+    # about product item loop
+    - image: "images/babyb1.jpeg"
+      title: "Mother & Child Care"
+      content:
+        "Your Child's daily needs can be facilitated for."
+      button:
+        enable: true
+        label: "Explore Category"
+        link: "products3/"
+
+        # about product item loop
+    - image: "images/womansta.avif"
+      title: "Home & Elderly Equipment"
+      content:
+        "We provide to your doorstep a variety of equipments and care options, to aid & facilitate elderly and at home patients' daily care."
+      button:
+        enable: true
+        label: "Explore Category"
+        link: "products4/"
+
+#################################### Products ########################
+products:
+  enable: true
+  title: "CheckOut All Our Products"
+
+################################## Subscription ###################
+subscription:
+  enable: true
+  bg_image: "images/call-to-action.jpg"
+  title: "Get Product Updates"
+  content: "Get Our Product Updates. No Spam Or any additional messages, only products, That's it!"
+  placeholder: "Your Email Address Here"
+
+############################## Testimonial ##########################
+testimonial:
+  enable: true
+  title: "Clients' Reviews"
+  testimonial_item:
+    # testimonial item loop
+    - name: "Thamir"
+      designation: "Caregiver"
+      image: "images/avater.png"
+      content: "Great service."
+
+    # testimonial item loop
+    - name: "Mohannad"
+      designation: "Caregiver"
+      image: "images/avater.png"
+      content: "Great service."
+
+    # testimonial item loop
+    - name: "Saud"
+      designation: "Caregiver"
+      image: "images/avater.png"
+      content: "Great service."

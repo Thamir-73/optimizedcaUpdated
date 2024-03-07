@@ -1,0 +1,124 @@
+############################# banner ############################
+banner:
+  enable: true
+  title: "نوفر لكم منتجاتنا الطبية اللي تحتاجوها الى باب بيتكم"
+  content: "من مسلتزمات مابعد الجراحة، الى احتياجات رعاية الام، الى مسلتزمات الرعاية المنزلية"
+  image: "images/legs22.png"
+  button:
+    enable: true
+    label: "تصفح منتجاتنا"
+    link: "products/"
+
+############################# Feature ############################
+features:
+  enable: true
+  title: "لماذا نحن؟"
+  image: "images/shhip88.webp"
+
+  # feature at the left of the image
+  left_side:
+    # feature item loop
+    - title: "جودة عالية"
+      icon: "tf-ion-ios-medkit-outline"
+      content: ".منتجات عالية الجودة، مُختارة بعناية من قبل ممارسين صحيين"
+
+
+      # feature item loop
+    - title: "عروض و تخفيضات"
+      icon: "tf-ion-ios-cart-outline"
+      content: ".عروض و تخفيضات لعملائنا المهتمين بشراء مجموعة من مسلتزماتنا الطبية"
+
+  # feature at the right of the image
+  right_side:
+    # feature item loop
+    - title: "توصيل سريع"
+      icon: "tf-ion-ios-alarm-outline"
+      content: ".الطلب يوصلك لحد باب بيتك في اقل من ٢٤ ساعة"
+
+      # feature item loop
+    - title: "تجربة سلسة"
+      icon: "tf-ion-ios-bell-outline"
+      content: "تستطيع كعميل استرجاع اي طلب لم يُستخدم، بالتواصل معنا"
+
+
+############################# promo ############################
+promo:
+  enable: false
+  image: "images/watch.png"
+  title: "Designed by professional , the benefit for creative gigs"
+  content:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima
+    nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum.
+    <br><br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis commodi odit, illo, qui aliquam dol"
+
+############################# About Product #######################
+about_product:
+  enable: true
+  title: "فئات المنتجات"
+  items:
+    # about product item loop
+    - image: "images/roppe.jpg"
+      title: "مسلتزمات ورعاية مابعد الجراحة"
+      content:
+        ".نوفر لكم جميع مستلزمات واحتياجات ما بعد الجراحات، الى باب بيتكم"
+      button:
+        enable: true
+        label: "استكشف الفئة"
+        link: "#/"
+
+    # about product item loop
+    - image: "images/babyb1.jpeg"
+      title: "رعاية ومسلتزمات الام للاطفال"
+      content:
+        "نوفر لكم جميع حاجات الطفل،من ضمنها مستلزمات الرضاعة الطبيعية."
+      button:
+        enable: true
+        label: "استكشف الفئة"
+        link: "#/"
+
+        # about product item loop
+    - image: "images/womansta.avif"
+      title: "رعاية المنزل وكبار السن"
+      content:
+        "نوفر منتجات ومستلزمات لكبار السن ومرضى الرعاية المنزلية، بكل ما يحتاجوه للرعاية اليومية"
+      button:
+        enable: true
+        label: "استكشف الفئة"
+        link: "#/"
+
+#################################### Products ########################
+products:
+  enable: true
+  title: "استكشفوا جميع منتجاتنا"
+
+################################## Subscription ###################
+subscription:
+  enable: true
+  bg_image: "images/call-to-action.jpg"
+  title: "تعرّف على اجدد منتجاتنا"
+  content: "ستصلك اجدد المنتجات فقط، بدون اي اعلانات او رسائل عديدة"
+  placeholder: "بريدك الاكتروني"
+
+############################## Testimonial ##########################
+testimonial:
+  enable: true
+  title: "تقييم العملاء"
+  testimonial_item:
+    # testimonial item loop
+    - name: "ثامر"
+      designation: "مقدم رعاية"
+      image: "images/avater.png"
+      content: "خدمة جميلة"
+
+    # testimonial item loop
+    - name: "مهند"
+      designation: "مقدم رعاية"
+      image: "images/avater.png"
+      content: "خدمة جميلة"
+
+    # testimonial item loop
+    - name: "سعود"
+      designation: "مقدم رعاية"
+      image: "images/avater.png"
+      content: "خدمة جميلة"

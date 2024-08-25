@@ -1,7 +1,18 @@
 [build]
   publish = "public"
   command = "hugo --minify --gc"
-  
+  functions = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/payment-complete"
+  to = "/payment-complete.html"
+  status = 200
+
 [build.environment]
   HUGO_VERSION = "0.87.0"
   HUGO_BASEURL = "/"

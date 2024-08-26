@@ -151,7 +151,7 @@ preloader = "" # use .png , .svg or .gif format
 [params.snipcart]
 enable = true
 # snipcart public api key
-snipcart_api = "Y2U3MDE0MTUtNTM3OS00YzZiLWJjNzItNzVjNjEzMDIzNjYwNjM4NDI1NjI2MDc1Njk4MTMw"
+snipcart_api = "MTk5Y2MwZGMtY2QwMi00MmUxLWFmYWEtYWU0ZDc0ZjZkOWVlNjM4NDI1NjI2MDc1Njk4MTMw"
 
 # Subscription
 [params.subscription]

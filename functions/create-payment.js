@@ -1,11 +1,33 @@
 const axios = require('axios');
 
 const TAP_API_KEY = process.env.TAP_API_KEY;
+const SNIPCART_SECRET_KEY = process.env.SNIPCART_SECRET_KEY;
 const TAP_API_URL = 'https://api.tap.company/v2/charges';
 
 exports.handler = async function(event, context) {
+  console.log('Received headers:', event.headers);
+  console.log('Received body:', event.body);
+
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
+  }
+
+  // Verify the request is coming from Snipcart
+  const token = event.headers['x-snipcart-requesttoken'];
+  try {
+    const verifyResponse = await axios.get(`https://app.snipcart.com/api/requestvalidation/${token}`, {
+      headers: {
+        'Authorization': `Basic ${Buffer.from(SNIPCART_SECRET_KEY).toString('base64')}`
+      }
+    });
+    if (!verifyResponse.data.token) {
+      console.error('Snipcart verification failed');
+      return { statusCode: 401, body: 'Unauthorized' };
+    }
+    console.log('Snipcart verification successful');
+  } catch (error) {
+    console.error('Snipcart verification error:', error);
+    return { statusCode: 401, body: 'Unauthorized' };
   }
 
   try {
